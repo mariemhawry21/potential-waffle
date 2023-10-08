@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="intro min-h-screen  px-10 sm:px-28">
+      <div class="overlay z-0"></div>
+      <header class="bg-transparent  py-10  relative flex flex-row z-20 justify-between ">
+        <img src="./images/logo.svg" alt="logo" id="image">
+        <ul class="flex flex-row text-1xl text-white  hidden sm:flex">
+          <li class="mx-5 hover:border-b-2 "><a href="#About">About</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Careers">Careers</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Events">Events</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Products">Products</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Support">Support</a></li>
+        </ul>
+        <img src="./images/icon-hamburger.svg" alt="ham" id="ham" onclick="myFunction()" class="sm:hidden">
+      </header>
+      <section class="relative text-slate-100 text-center z-20 flex justify-start
+      ">
+        <div
+          class="flex sm:py-5 sm:pl-10 border-2 sm:text-6xl  p-5 text-2xl max-w-sm sm:max-w-xl w-full uppercase text-start mt-32 ">
+          <h1 class="font-normal	max-w-md">Immersive experiences that deliver</h1>
+        </div>
+      </section>
+    </div>
+    <div class="hidden p-10 bg-black text-white min-h-screen" id="ham-ul">
+      <div class="flex flex-row justify-between mb-10">
+        <img src="./images/logo.svg" alt="logo">
+        <img src="./images/icon-close.svg" alt="close" id="close">
+      </div>
+      <ul class="flex flex-col  text-gray-500 mt-40">
+        <li class="mb-5 text-2xl uppercase"><a href="#About">About</a></li>
+        <li class="mb-5 text-2xl uppercase"><a href="#Careers">Careers</a></li>
+        <li class="mb-5 text-2xl uppercase"><a href="#Events">Events</a></li>
+        <li class="mb-5 text-2xl uppercase"><a href="#Products">Products</a></li>
+        <li class="mb-5 text-2xl uppercase"><a href="#Support">Support</a></li>
+      </ul>
+    </div>
+    <div class="my-24 sm:mx-28 mx-10 flex flex-col sm:flex-row relative">
+      <img src="./images/desktop/image-interactive.jpg" alt="inter">
+      <div class="sm:absolute bg-white sm:p-20 sm:right-44 sm:bottom-0 mt-5 text-center">
+        <h2 class="sm:text-5xl text-3xl uppercase sm:max-w-md">The leader in interactive VR</h2>
+        <p class="max-w-md mt-3">Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.</p>
+      </div>
+    </div>
+    <div class="flex flex-row  justify-center sm:justify-between my-20 sm:mx-28 items-center">
+      <h3 class="text-5xl uppercase">Our creations</h3>
+      <button class=" hidden sm:block bg-black text-white px-10 py-2 uppercase">See all</button>
+    </div>
+    <div class="grid sm:grid-cols-4 grid-cols-1 relative gap-4 sm:mx-28 mx-10 mt-20">
+      <div class="card max-w-full relative ">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-deep-earth.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-deep-earth.jpg" alt="deep" class="sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">Deep earth
+        </p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-night-arcade.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-night-arcade.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">night arcade
+        </p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-soccer-team.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-soccer-team.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">soccer team
+        </p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-grid.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-grid.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">The grid</p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-from-above.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-from-above.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">The grid</p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-pocket-borealis.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-pocket-borealis.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">The grid</p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-curiosity.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-curiosity.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">The grid</p>
+      </div>
+      <div class="card max-w-full relative">
+        <div class="overlay"></div>
+        <img src="./images/desktop/image-fisheye.jpg" alt="deep" class="w-full hidden sm:grid">
+        <img src="./images/mobile/image-fisheye.jpg" alt="deep" class="w-full sm:hidden">
+        <p class="uppercase absolute bottom-5 left-10 text-white sm:text-3xl w-3/12 ">The grid</p>
+      </div>
+    </div>
+    <div class="sm:hidden flex flex-row justify-center items-center mb-20 ">
+      <div class="px-5 mt-4 border-2 text-center text-lg font-bold border-black text-black uppercase py-1">
+        see all
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-between py-5 sm:px-20 bg-black text-white mt-20 items-center">
+      <div class="flex flex-col items-start">
+        <img src="./images/logo.svg" alt="logo" class="w-40">
+        <ul class="flex sm:flex-row flex-col my-3">
+          <li class="mr-5 hover:border-b-2 "><a href="#About">About</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Careers">Careers</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Events">Events</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Products">Products</a></li>
+          <li class="mx-5 hover:border-b-2"><a href="#Support">Support</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-end">
+        <ul class="flex sm:flex-row flex-col my-2">
+          <a href="" class="mx-1 py-2 hover:border-b-2"><img src="./images/icon-facebook.svg" alt="fac"></a>
+          <a href="" class="mx-1 py-2 hover:border-b-2"><img src="./images/icon-twitter.svg" alt="fac"></a>
+          <a href="" class="mx-1 py-2 hover:border-b-2"><img src="./images/icon-pinterest.svg" alt="fac"></a>
+          <a href="" class="mx-1 py-2 hover:border-b-2"><img src="./images/icon-instagram.svg" alt="fac"></a>
+        </ul>
+        <p class="mt-3">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
